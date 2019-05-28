@@ -2,11 +2,10 @@ package com.example.seconddemosdk
 
 import android.os.Bundle
 import android.util.Log
-import com.google.android.material.snackbar.Snackbar
 import androidx.appcompat.app.AppCompatActivity;
 import android.view.Menu
 import android.view.MenuItem
-import com.example.seconddemosdkaar.FirstClass
+import com.example.seconddemosdkaar.WorkingOnOkhttp
 
 import kotlinx.android.synthetic.main.activity_main.*
 
@@ -18,9 +17,9 @@ class MainActivity : AppCompatActivity() {
         setSupportActionBar(toolbar)
 
         fab.setOnClickListener { view ->
-            val firstClass = FirstClass()
-
-            Log.e("X---first-class","${firstClass.okhttpExample}")
+            val workingOnOkhttp = WorkingOnOkhttp()
+            Log.e("X---first-class1", workingOnOkhttp.builder)
+            Log.e("X---first-class2", workingOnOkhttp.okHttpClient)
         }
     }
 
