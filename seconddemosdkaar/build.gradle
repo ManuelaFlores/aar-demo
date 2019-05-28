@@ -1,6 +1,6 @@
 apply plugin: 'com.android.library'
 apply plugin: 'maven'
-group='com.github.manuelaflores'
+group='com.github.ManuelaFlores'
 version='1.0.0'
 
 android {
